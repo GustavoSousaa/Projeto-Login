@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cadastro.css">  
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="cadastro">
+        <div class="left-cadastro">
+            <h1>Realize seu cadastro gratuitamente</h1>
+            <img src="secure-login-animate.svg" class="left-cadastro-image" alt="Job">  
+        </div>
+        <div class="right-cadastro">
+            <div class="card-cadastro">
+                <h1>Informe seus dados</h1>
+                <div class="textfield">
+                    <form onsubmit="return validarFormulario()"></form>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="Nome Completo" placeholder="Insira seu Nome">
+                </div>
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+                <p class="erro" id="erroEmail">Preencha um e-mail válido.</p>
+                <div class="textfield">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Ex:11999999999" required><br><br>
+                </div>
+                <p class="erro" id="erroTelefone">Preencha um telefone válido (10 ou 11 dígitos).</p>
+            <form onsubmit="return validarSenha()"></form>
+                <div class="senha-container">
+                    <label for="senha">Senha:</label>    
+                    <input type="password" id="senha" name="senha"
+                        pattern="(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}"
+                        title="A senha deve ter no mínimo 6 caracteres, incluindo uma letra maiúscula e um caractere especial (!@#$%^&*)"
+                        required><br><br>
+                    <span class="olho" onclick="toggleSenha('senha', 'olhoSenha')">👁️</span>
+                </div>
+                <div class="senha-container">    
+                    <label for="confirmarSenha">Confirme a Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" 
+                    required><br><br>
+                    <span class="olho" onclick="toggleSenha('confirmarSenha', 'olhoConfirmar')">👁️</span>
+                 </div>
+                 <p class="erro" id="erroSenha">A senha deve ter no mínimo 6 caracteres, uma letra maiúscula e um caractere especial (!@#$%^&*).</p>
+        <br><br> 
+                <br></br>
+
+                        
+                    <button id="btn-cadastro">Cadastre-se</button>
+    
+<script src="cadastro.js"></script>
+
+</body>
+</html>
