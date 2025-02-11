@@ -16,7 +16,7 @@ body {
 }
 
 .left-cadastro{
-    width: 100vw;
+    width: 70vw;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -30,14 +30,15 @@ body {
 }
 
 .left-cadastro-image{
-    width: 38vw;
+    width: 39vw;
 }
 
 .right-cadastro {
     width: 50vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items:center;
+    align-items: center;
 }
 
 .card-register{
