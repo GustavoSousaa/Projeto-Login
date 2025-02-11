@@ -16,7 +16,7 @@ body {
 }
 
 .left-cadastro{
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     display:flex;
     justify-content: center;
@@ -30,23 +30,21 @@ body {
 }
 
 .left-cadastro-image{
-    width: 35vw;
+    width: 38vw;
 }
 
 .right-cadastro {
     width: 50vw;
-    height: 100vh;
+    height: 50vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 
 .card-cadastro{
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column;
     padding: 30px 35px;
     background: #2f2841;
     border-radius: 20px;
@@ -70,15 +68,17 @@ a {
 
 .textfield {
     width: 100%;
+    height: 90px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 12px 0px;
 }
 
 .textfield > input {
     width: 100%;
+    margin-top: 2%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -92,25 +92,93 @@ a {
 
 .textfield > label{
     color: #f0ffffde;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
 .textfield > input::placeholder{
     color: #f0ffff94;
 }
 
-.senha-container {
+.text {
     width: 100%;
-    display: inline-block;
+    height: 90%;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 12px 0px;
+}
+
+.text > label {
+    color: #f0ffffde;
+    margin-bottom: 2px;
+}
+
+.text > input {
+    width: 100%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: opx 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.text > input::placeholder {
+    color: #f0ffff94;
+}
+
+.tele {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 12px 0px;
+}
+
+.tele > input {
+    width: 100%;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.tele > label {
+    color: #f0ffffde;
+    margin-bottom: 2%;
+}
+
+.tele > input::placeholder {
+    color: #f0ffff94;
+}
+
+.senha-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 12px 0px;
     position: relative;
 }
 
 .senha-container > input{
     width: 100%;
+    margin-top: 2%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -124,14 +192,17 @@ a {
 
 .senha-container > label{
     color: #f0ffffde;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
 }
 
+.senha-container > input::placeholder {
+    color: #f0ffff94;
+}
 
 .senha-container .olho {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 48%;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -147,7 +218,7 @@ a {
 #btn-cadastro {
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
+    margin: 5px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -155,6 +226,7 @@ a {
     font-weight: 800;
     letter-spacing: 3px;
     color: #2b134b;
+    background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
