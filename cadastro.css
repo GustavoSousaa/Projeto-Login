@@ -222,6 +222,11 @@ a {
     top: 48%;
     transform: translateY(-50%);
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.olho:hover {
+    transform: translateY(-50%) scale(1.2);
 }
 
 .erro {

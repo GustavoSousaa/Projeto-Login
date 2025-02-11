@@ -41,6 +41,19 @@ function validarFormulario() {
     } else {
         document.getElementById("erroSenha").style.display = "none";
     }
+
+const idOlho = document.getElementById('olho');
+const password = document.getElementById('senha');
+
+idOlho.addEventListener('click', function() {
+    if (password.type === 'senha') {
+        password.type = 'text';
+        idOlho.textContent = '🙈';  // Mudando o ícone para o "olho fechado"
+    } else {
+        password.type = 'senha';
+        idOlho.textContent = '👁️';  // Mudando o ícone para o "olho aberto"
+    }
+});
         
     // Valida Confirmação de Senha
     if (senha !== confirmarSenha || confirmarSenha === "") {
