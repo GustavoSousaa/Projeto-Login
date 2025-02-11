@@ -40,24 +40,28 @@ body {
     align-items:center;
 }
 
-.card-cadastro{
-    display: flex;
+.card-register{
+    width: 150%;
+    display: flex;  
+    margin: 20px 30px;
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    padding: 30px 35px;
+    padding: 30px;
+    border: 1px solid;
     background: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #66161656;
 }
 
-.card-cadastro > h1 {
+
+.card-register > h1 {
     color: #00ff88;
     font-weight: 800;
-    margin: 0;
+    margin: 15px;
 }
 
-.card-cadastro {
+.card-register {
     width: 100%;
 }
 
@@ -73,12 +77,13 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 12px 0px;
+    margin: 1px;
 }
 
 .textfield > input {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5px;
+    margin-bottom: 1px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -88,11 +93,13 @@ a {
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    gap: 15px;
 }
 
 .textfield > label{
     color: #f0ffffde;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .textfield > input::placeholder{
@@ -106,26 +113,29 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 12px 0px;
+    margin: 12px;
 }
 
 .text > label {
     color: #f0ffffde;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .text > input {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5px;
+    margin-bottom: 1px;
     border: none;
     border-radius: 10px;
     padding: 15px;
     background: #514869;
     color: #f0ffffde;
     font-size: 12pt;
-    box-shadow: opx 10px 40px #00000056;
+    box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    gap: 15px;
 }
 
 
@@ -140,12 +150,13 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 12px 0px;
+    margin: 1px;
 }
 
 .tele > input {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5px;
+    margin-bottom: 1px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -155,11 +166,13 @@ a {
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    gap: 15px;
 }
 
 .tele > label {
     color: #f0ffffde;
-    margin-bottom: 2%;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .tele > input::placeholder {
@@ -172,13 +185,14 @@ a {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 12px 0px;
+    margin: 1px;
     position: relative;
 }
 
 .senha-container > input{
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5px;
+    margin-bottom: 1px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -188,11 +202,13 @@ a {
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    gap: 15px;
 }
 
 .senha-container > label{
     color: #f0ffffde;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .senha-container > input::placeholder {
@@ -232,7 +248,7 @@ a {
 }
 
 @media only screen and (max-width:950px) {
-    .card-cadastro {
+    .card-register {
         width: 80%;
     }
 }

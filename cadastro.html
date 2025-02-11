@@ -13,7 +13,7 @@
             <img src="secure-login-animate.svg" class="left-cadastro-image" alt="Job">  
         </div>
         <div class="right-cadastro">
-            <div class="card-cadastro">
+            <div class="card-register">
                 <h1>Informe seus dados</h1>
                 <div class="textfield">
                     <form onsubmit="return validarFormulario()"></form>
@@ -29,7 +29,7 @@
                     <label for="telefone">Telefone:</label>
                     <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" placeholder="Ex:11999999999" required><br><br>
                 </div>
-            
+                       
                 <p class="erro" id="erroTelefone">Preencha um telefone válido (10 ou 11 dígitos).</p>
             <form onsubmit="return validarSenha()"></form>
                 <div class="senha-container">
@@ -47,7 +47,8 @@
                     <span class="olho" onclick="toggleSenha('confirmarSenha', 'olhoConfirmar')">👁️</span>
                  </div>
                  <p class="erro" id="erroSenha">A senha deve ter no mínimo 6 caracteres, uma letra maiúscula e um caractere especial (!@#$%^&*).</p>
-                 <button id="btn-cadastro">Cadastre-se</button> 
+                 <button id="btn-cadastro">Cadastre-se</button>
+                 
             </div>
         </div>    
         <br><br> 
