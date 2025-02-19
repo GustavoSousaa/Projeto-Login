@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors'); 
+const bcrypt = require('bcryptjs');
 
 const app = express();
 
@@ -19,6 +20,26 @@ conexao.connect((erro) => {
   console.log('Conectado ao banco de dados!');
 });
 
+app.post('/cadastro', (req, res) =>{
+
+  const {nome, email, telefone, senha} = req.body;
+  const consulta = 'INSERT INTO users(Nome_Usuario, Email, Telefone, Senha) values(?,?,?,?)';
+
+  bcrypt.hash(senha, 10, (erro, hashedPassword) => {
+    if (erro) {
+      console.error('Erro ao criar hash da senha:', erro);
+      return res.status(500).send('Erro ao criar conta.');
+    }
+
+    conexao.query(consulta, [nome, email, telefone, hashedPassword], (erro, results) => {
+      if (erro) {
+        console.error('Erro ao inserir dados:', erro);
+        return res.status(500).send('Erro ao cadastrar!');
+      }
+      res.status(200).send({ success: true, message: 'Cadastro realizado com sucesso!' });
+    });
+  });
+});
 
 
 app.post('/login', (req, res) => {
