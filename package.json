@@ -1,4 +1,5 @@
 {
+  
   "name": "projeto-login",
   "version": "1.0.0",
   "description": "Lading page com intuito de realizar um login e cadastro.\r Utilizando HTML, CSS, Javascript",
@@ -18,4 +19,7 @@
     "express": "^4.21.2",
     "mysql2": "^3.12.0"
   }
+
 }
+
+
